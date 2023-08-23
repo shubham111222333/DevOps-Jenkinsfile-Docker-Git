@@ -7,7 +7,7 @@ pipeline {
              // Get SHA1 of current commit
              // remove previous containers  
              // BUILD the Docker image
-            sh 'docker pull tomcat' 
+            sh 'sudo docker pull tomcat' 
             }
         }
         stage('Scan') {
